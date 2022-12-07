@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azin Poli Nour</title>
+
+    <link rel="stylesheet" href="./asset/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/fonts/jco-icon-embedded.css">
+    <link rel="stylesheet" href="./asset/swiper/swiper.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+
+<body>
+
+    <div class="container-2xl h-100 p-0">
+        <div class="login-page">
+            <div class="form-sec">
+                <div class="">
+                    <h2>به آذین پلی نور خوش آمدید.</h2>
+                </div>
+                <div>
+                    <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-login-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-login" type="button" role="tab" aria-controls="pills-login"
+                                aria-selected="true">ورود</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-sign-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-sign" type="button" role="tab" aria-controls="pills-sign"
+                                aria-selected="false">ثبت نام</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active login-tab" id="pills-login" role="tabpanel"
+                            aria-labelledby="pills-login-tab">
+                            <form action="" class="login-form">
+                                <div class="form-input mt-3">
+                                    <input type="tel" id="phoneInput" placeholder=" ">
+                                    <label for="phoneInput">شماره همراه</label>
+                                </div>
+                                <div class="form-input mt-3">
+                                    <input type="password" id="passwordInput" placeholder=" ">
+                                    <label for="passwordInput">رمز عبور</label>
+                                </div>
+                                <p class="pass-forget mt-3">رمز عبور خود را فراموش کرده‌اید؟<a href="javascript:;">فراموشی رمز عبور</a></p>
+                                <button class="mt-4 w-100 k-btn k-btn-main">ورود</button>
+                            </form>
+                            <!-- <form action="" class="step-one mt-5">
+                                <div class="form-input mt-3">
+                                    <input type="tel" id="phoneInput" placeholder=" ">
+                                    <label for="phoneInput">شماره همراه</label>
+                                </div>
+                                <button type="button" id="getNumber" class="mt-4 w-100 k-btn k-btn-main">ارسال</button>
+                            </form> -->
+                            <!-- <form class="form code-box mt-5">
+                                <div class="code-container mt-2">
+                                    <input type="tel" class="code" maxlength="1" id="p_1">
+                                    <input type="tel" class="code" maxlength="1" id="p_2">
+                                    <input type="tel" class="code" maxlength="1" id="p_3">
+                                    <input type="tel" class="code" maxlength="1" id="p_4">
+                                </div>
+                                <button id="submit" type="button" class="mt-3 w-100">تایید</button>
+                                <div class="d-flex justify-content-between pt-3">
+                                    <a href="javascript:;" class="changeNumber">تغییر شماره</a>
+                                    <div class="d-flex">
+                                        <span class="countdown"></span>
+                                        <a href="javascript:;" class="resend">ارسال مجدد</a>
+                                    </div>
+                                </div>
+                            </form> -->
+                            <!-- <form action="" class="step-three">
+                                <div class="form-input mt-3">
+                                    <input type="password" id="passwordInput4" placeholder=" ">
+                                    <label for="passwordInput4">رمز عبور جدید</label>
+                                </div>
+                                <div class="form-input mt-3">
+                                    <input type="password" id="passwordInput5" placeholder=" ">
+                                    <label for="passwordInput5">تکرار رمز عبور جدید</label>
+                                </div>
+                                <button class="mt-4 w-100 k-btn k-btn-main">تایید</button>
+                            </form> -->
+                        </div>
+                        <div class="tab-pane fade" id="pills-sign" role="tabpanel"
+                            aria-labelledby="pills-sign-tab">
+                            <form action="" class="step-one mt-5">
+                                <div class="form-input mt-3">
+                                    <input type="tel" id="phoneInput2" placeholder=" ">
+                                    <label for="phoneInput2">شماره همراه</label>
+                                </div>
+                                <button type="button" id="getNumber" class="mt-4 w-100 k-btn k-btn-main">ارسال</button>
+                            </form>
+                            <form class="form code-box mt-5">
+                                <div class="code-container mt-2">
+                                    <input type="tel" class="code" maxlength="1" id="p_1">
+                                    <input type="tel" class="code" maxlength="1" id="p_2">
+                                    <input type="tel" class="code" maxlength="1" id="p_3">
+                                    <input type="tel" class="code" maxlength="1" id="p_4">
+                                </div>
+                                <button id="submit" type="button" class="mt-3 w-100">تایید</button>
+                                <div class="d-flex justify-content-between pt-3">
+                                    <a href="javascript:;" class="changeNumber">تغییر شماره</a>
+                                    <div class="d-flex">
+                                        <span class="countdown"></span>
+                                        <a href="javascript:;" class="resend">ارسال مجدد</a>
+                                    </div>
+                                </div>
+                            </form>
+                            <form action="" class="step-three">
+                                <div class="form-input mt-3">
+                                    <input type="password" id="passwordInput2" placeholder=" ">
+                                    <label for="passwordInput2">رمز عبور</label>
+                                </div>
+                                <div class="form-input mt-3">
+                                    <input type="password" id="passwordInput3" placeholder=" ">
+                                    <label for="passwordInput3">تکرار رمز عبور</label>
+                                </div>
+                                <button class="mt-4 w-100 k-btn k-btn-main">ورود</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="login-banner">
+                <img src="./asset/img/1920x1560.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./asset/js/jquery.js"></script>
+    <script src="./asset/js/popper-v2-11-2.js"></script>
+    <script src="./asset/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="./asset/js/codeBox.js"></script>
+
+</body>
+
+</html>
