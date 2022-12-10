@@ -548,6 +548,41 @@ footer {
   margin-top: auto;
 }
 
+.select-box {
+  position: relative;
+}
+.select-box .select-box-ul {
+  position: absolute;
+  width: 150px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+  opacity: 0;
+  top: 50%;
+  right: 0;
+  visibility: hidden;
+  overflow: hidden !important;
+  display: grid;
+  background-color: #fff;
+  transition: all 0.3s;
+  border-radius: 5px;
+  padding: 5px;
+}
+.select-box .select-box-ul.show {
+  visibility: visible;
+  opacity: 1;
+  z-index: 5;
+  top: 100%;
+}
+.select-box .select-box-ul.basket-icon-list {
+  width: 300px;
+  overflow-y: scroll;
+  right: auto;
+  left: 0;
+  padding: 10px;
+}
+
 .text-gradient {
   font-size: 70px;
   font-weight: bolder;
@@ -677,373 +712,373 @@ footer {
   background-color: hsla(81deg, 93%, 76%, 0.3);
 }
 .bubble:nth-child(0) {
-  --bubble-left-offset: 26vw;
-  --bubble-radius: 9vw;
-  --bubble-float-duration: 13s;
+  --bubble-left-offset: 39vw;
+  --bubble-radius: 4vw;
+  --bubble-float-duration: 12s;
   --bubble-sway-duration: 8s;
-  --bubble-float-delay: 5s;
+  --bubble-float-delay: 7s;
   --bubble-sway-delay: 4s;
   --bubble-sway-type: sway-left-to-right;
 }
 .bubble:nth-child(1) {
-  --bubble-left-offset: 52vw;
-  --bubble-radius: 8vw;
-  --bubble-float-duration: 16s;
-  --bubble-sway-duration: 10s;
-  --bubble-float-delay: 0s;
-  --bubble-sway-delay: 0s;
-  --bubble-sway-type: sway-right-to-left;
+  --bubble-left-offset: 15vw;
+  --bubble-radius: 7vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 9s;
+  --bubble-float-delay: 8s;
+  --bubble-sway-delay: 7s;
+  --bubble-sway-type: sway-left-to-right;
 }
 .bubble:nth-child(2) {
-  --bubble-left-offset: 91vw;
-  --bubble-radius: 6vw;
-  --bubble-float-duration: 15s;
-  --bubble-sway-duration: 9s;
-  --bubble-float-delay: 0s;
-  --bubble-sway-delay: 3s;
-  --bubble-sway-type: sway-right-to-left;
+  --bubble-left-offset: 10vw;
+  --bubble-radius: 10vw;
+  --bubble-float-duration: 14s;
+  --bubble-sway-duration: 8s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-left-to-right;
 }
 .bubble:nth-child(3) {
-  --bubble-left-offset: 28vw;
+  --bubble-left-offset: 67vw;
   --bubble-radius: 7vw;
-  --bubble-float-duration: 15s;
+  --bubble-float-duration: 10s;
   --bubble-sway-duration: 9s;
-  --bubble-float-delay: 4s;
+  --bubble-float-delay: 5s;
   --bubble-sway-delay: 6s;
   --bubble-sway-type: sway-left-to-right;
 }
 .bubble:nth-child(4) {
-  --bubble-left-offset: 5vw;
-  --bubble-radius: 7vw;
-  --bubble-float-duration: 12s;
+  --bubble-left-offset: 36vw;
+  --bubble-radius: 1vw;
+  --bubble-float-duration: 11s;
   --bubble-sway-duration: 10s;
-  --bubble-float-delay: 2s;
-  --bubble-sway-delay: 3s;
-  --bubble-sway-type: sway-left-to-right;
+  --bubble-float-delay: 7s;
+  --bubble-sway-delay: 8s;
+  --bubble-sway-type: sway-right-to-left;
 }
 .bubble:nth-child(5) {
-  --bubble-left-offset: 25vw;
-  --bubble-radius: 4vw;
+  --bubble-left-offset: 83vw;
+  --bubble-radius: 3vw;
   --bubble-float-duration: 12s;
-  --bubble-sway-duration: 8s;
-  --bubble-float-delay: 2s;
-  --bubble-sway-delay: 3s;
+  --bubble-sway-duration: 9s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 6s;
   --bubble-sway-type: sway-left-to-right;
 }
 .bubble:nth-child(6) {
-  --bubble-left-offset: 97vw;
-  --bubble-radius: 5vw;
-  --bubble-float-duration: 14s;
-  --bubble-sway-duration: 10s;
-  --bubble-float-delay: 1s;
-  --bubble-sway-delay: 0s;
+  --bubble-left-offset: 68vw;
+  --bubble-radius: 7vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 9s;
+  --bubble-float-delay: 5s;
+  --bubble-sway-delay: 8s;
   --bubble-sway-type: sway-left-to-right;
 }
 .bubble:nth-child(7) {
-  --bubble-left-offset: 67vw;
-  --bubble-radius: 8vw;
-  --bubble-float-duration: 13s;
-  --bubble-sway-duration: 8s;
-  --bubble-float-delay: 7s;
-  --bubble-sway-delay: 5s;
+  --bubble-left-offset: 60vw;
+  --bubble-radius: 7vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 9s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 7s;
   --bubble-sway-type: sway-left-to-right;
 }
 .bubble:nth-child(8) {
-  --bubble-left-offset: 75vw;
-  --bubble-radius: 9vw;
-  --bubble-float-duration: 16s;
-  --bubble-sway-duration: 9s;
-  --bubble-float-delay: 2s;
-  --bubble-sway-delay: 5s;
-  --bubble-sway-type: sway-right-to-left;
-}
-.bubble:nth-child(9) {
-  --bubble-left-offset: 71vw;
-  --bubble-radius: 4vw;
-  --bubble-float-duration: 15s;
-  --bubble-sway-duration: 9s;
-  --bubble-float-delay: 2s;
-  --bubble-sway-delay: 1s;
+  --bubble-left-offset: 5vw;
+  --bubble-radius: 2vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 8s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 3s;
   --bubble-sway-type: sway-left-to-right;
 }
-.bubble:nth-child(10) {
-  --bubble-left-offset: 27vw;
-  --bubble-radius: 4vw;
+.bubble:nth-child(9) {
+  --bubble-left-offset: 41vw;
+  --bubble-radius: 3vw;
   --bubble-float-duration: 14s;
+  --bubble-sway-duration: 8s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 6s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(10) {
+  --bubble-left-offset: 81vw;
+  --bubble-radius: 8vw;
+  --bubble-float-duration: 13s;
   --bubble-sway-duration: 9s;
-  --bubble-float-delay: 5s;
-  --bubble-sway-delay: 0s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 1s;
   --bubble-sway-type: sway-right-to-left;
 }
 .bubble:nth-child(11) {
-  --bubble-left-offset: 91vw;
-  --bubble-radius: 6vw;
+  --bubble-left-offset: 32vw;
+  --bubble-radius: 3vw;
   --bubble-float-duration: 15s;
-  --bubble-sway-duration: 9s;
-  --bubble-float-delay: 1s;
-  --bubble-sway-delay: 1s;
-  --bubble-sway-type: sway-left-to-right;
-}
-.bubble:nth-child(12) {
-  --bubble-left-offset: 52vw;
-  --bubble-radius: 7vw;
-  --bubble-float-duration: 11s;
-  --bubble-sway-duration: 8s;
-  --bubble-float-delay: 0s;
+  --bubble-sway-duration: 10s;
+  --bubble-float-delay: 4s;
   --bubble-sway-delay: 4s;
   --bubble-sway-type: sway-right-to-left;
 }
+.bubble:nth-child(12) {
+  --bubble-left-offset: 16vw;
+  --bubble-radius: 2vw;
+  --bubble-float-duration: 14s;
+  --bubble-sway-duration: 10s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 8s;
+  --bubble-sway-type: sway-left-to-right;
+}
 .bubble:nth-child(13) {
-  --bubble-left-offset: 45vw;
-  --bubble-radius: 10vw;
-  --bubble-float-duration: 12s;
-  --bubble-sway-duration: 9s;
+  --bubble-left-offset: 78vw;
+  --bubble-radius: 2vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 10s;
   --bubble-float-delay: 7s;
-  --bubble-sway-delay: 5s;
+  --bubble-sway-delay: 7s;
   --bubble-sway-type: sway-left-to-right;
 }
 .bubble:nth-child(14) {
-  --bubble-left-offset: 61vw;
-  --bubble-radius: 2vw;
-  --bubble-float-duration: 12s;
-  --bubble-sway-duration: 9s;
-  --bubble-float-delay: 0s;
-  --bubble-sway-delay: 8s;
-  --bubble-sway-type: sway-right-to-left;
-}
-.bubble:nth-child(15) {
-  --bubble-left-offset: 22vw;
-  --bubble-radius: 6vw;
-  --bubble-float-duration: 13s;
-  --bubble-sway-duration: 8s;
-  --bubble-float-delay: 8s;
-  --bubble-sway-delay: 1s;
-  --bubble-sway-type: sway-left-to-right;
-}
-.bubble:nth-child(16) {
-  --bubble-left-offset: 82vw;
-  --bubble-radius: 6vw;
-  --bubble-float-duration: 13s;
-  --bubble-sway-duration: 8s;
-  --bubble-float-delay: 8s;
-  --bubble-sway-delay: 1s;
-  --bubble-sway-type: sway-left-to-right;
-}
-.bubble:nth-child(17) {
-  --bubble-left-offset: 56vw;
-  --bubble-radius: 2vw;
-  --bubble-float-duration: 15s;
-  --bubble-sway-duration: 8s;
-  --bubble-float-delay: 2s;
-  --bubble-sway-delay: 3s;
-  --bubble-sway-type: sway-right-to-left;
-}
-.bubble:nth-child(18) {
-  --bubble-left-offset: 1vw;
-  --bubble-radius: 4vw;
-  --bubble-float-duration: 15s;
-  --bubble-sway-duration: 9s;
-  --bubble-float-delay: 4s;
-  --bubble-sway-delay: 5s;
-  --bubble-sway-type: sway-right-to-left;
-}
-.bubble:nth-child(19) {
-  --bubble-left-offset: 13vw;
-  --bubble-radius: 10vw;
-  --bubble-float-duration: 16s;
-  --bubble-sway-duration: 9s;
-  --bubble-float-delay: 6s;
-  --bubble-sway-delay: 3s;
-  --bubble-sway-type: sway-right-to-left;
-}
-.bubble:nth-child(20) {
-  --bubble-left-offset: 35vw;
-  --bubble-radius: 8vw;
-  --bubble-float-duration: 14s;
-  --bubble-sway-duration: 8s;
-  --bubble-float-delay: 4s;
-  --bubble-sway-delay: 6s;
-  --bubble-sway-type: sway-right-to-left;
-}
-.bubble:nth-child(21) {
-  --bubble-left-offset: 89vw;
-  --bubble-radius: 6vw;
-  --bubble-float-duration: 14s;
-  --bubble-sway-duration: 9s;
-  --bubble-float-delay: 7s;
-  --bubble-sway-delay: 2s;
-  --bubble-sway-type: sway-left-to-right;
-}
-.bubble:nth-child(22) {
-  --bubble-left-offset: 36vw;
-  --bubble-radius: 2vw;
-  --bubble-float-duration: 12s;
-  --bubble-sway-duration: 10s;
-  --bubble-float-delay: 2s;
-  --bubble-sway-delay: 1s;
-  --bubble-sway-type: sway-right-to-left;
-}
-.bubble:nth-child(23) {
-  --bubble-left-offset: 60vw;
-  --bubble-radius: 1vw;
-  --bubble-float-duration: 16s;
-  --bubble-sway-duration: 10s;
-  --bubble-float-delay: 0s;
-  --bubble-sway-delay: 2s;
-  --bubble-sway-type: sway-right-to-left;
-}
-.bubble:nth-child(24) {
   --bubble-left-offset: 8vw;
-  --bubble-radius: 9vw;
-  --bubble-float-duration: 13s;
-  --bubble-sway-duration: 10s;
-  --bubble-float-delay: 7s;
-  --bubble-sway-delay: 3s;
-  --bubble-sway-type: sway-left-to-right;
-}
-.bubble:nth-child(25) {
-  --bubble-left-offset: 16vw;
-  --bubble-radius: 8vw;
-  --bubble-float-duration: 13s;
-  --bubble-sway-duration: 9s;
-  --bubble-float-delay: 1s;
-  --bubble-sway-delay: 4s;
-  --bubble-sway-type: sway-right-to-left;
-}
-.bubble:nth-child(26) {
-  --bubble-left-offset: 55vw;
   --bubble-radius: 2vw;
   --bubble-float-duration: 11s;
   --bubble-sway-duration: 9s;
+  --bubble-float-delay: 5s;
+  --bubble-sway-delay: 8s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(15) {
+  --bubble-left-offset: 5vw;
+  --bubble-radius: 9vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 9s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(16) {
+  --bubble-left-offset: 33vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 9s;
+  --bubble-float-delay: 6s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(17) {
+  --bubble-left-offset: 75vw;
+  --bubble-radius: 1vw;
+  --bubble-float-duration: 13s;
+  --bubble-sway-duration: 9s;
   --bubble-float-delay: 8s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(18) {
+  --bubble-left-offset: 71vw;
+  --bubble-radius: 1vw;
+  --bubble-float-duration: 14s;
+  --bubble-sway-duration: 8s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(19) {
+  --bubble-left-offset: 76vw;
+  --bubble-radius: 5vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 8s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 0s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(20) {
+  --bubble-left-offset: 65vw;
+  --bubble-radius: 5vw;
+  --bubble-float-duration: 15s;
+  --bubble-sway-duration: 9s;
+  --bubble-float-delay: 7s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(21) {
+  --bubble-left-offset: 52vw;
+  --bubble-radius: 10vw;
+  --bubble-float-duration: 13s;
+  --bubble-sway-duration: 9s;
+  --bubble-float-delay: 6s;
   --bubble-sway-delay: 3s;
   --bubble-sway-type: sway-right-to-left;
 }
-.bubble:nth-child(27) {
-  --bubble-left-offset: 92vw;
-  --bubble-radius: 6vw;
-  --bubble-float-duration: 12s;
-  --bubble-sway-duration: 10s;
-  --bubble-float-delay: 3s;
-  --bubble-sway-delay: 2s;
-  --bubble-sway-type: sway-left-to-right;
-}
-.bubble:nth-child(28) {
-  --bubble-left-offset: 67vw;
-  --bubble-radius: 8vw;
-  --bubble-float-duration: 16s;
-  --bubble-sway-duration: 9s;
-  --bubble-float-delay: 0s;
-  --bubble-sway-delay: 6s;
-  --bubble-sway-type: sway-right-to-left;
-}
-.bubble:nth-child(29) {
-  --bubble-left-offset: 25vw;
-  --bubble-radius: 4vw;
+.bubble:nth-child(22) {
+  --bubble-left-offset: 51vw;
+  --bubble-radius: 3vw;
   --bubble-float-duration: 13s;
-  --bubble-sway-duration: 10s;
-  --bubble-float-delay: 6s;
-  --bubble-sway-delay: 4s;
-  --bubble-sway-type: sway-right-to-left;
-}
-.bubble:nth-child(30) {
-  --bubble-left-offset: 92vw;
-  --bubble-radius: 6vw;
-  --bubble-float-duration: 12s;
   --bubble-sway-duration: 10s;
   --bubble-float-delay: 0s;
   --bubble-sway-delay: 0s;
   --bubble-sway-type: sway-left-to-right;
 }
-.bubble:nth-child(31) {
-  --bubble-left-offset: 39vw;
-  --bubble-radius: 10vw;
+.bubble:nth-child(23) {
+  --bubble-left-offset: 4vw;
+  --bubble-radius: 1vw;
+  --bubble-float-duration: 14s;
+  --bubble-sway-duration: 10s;
+  --bubble-float-delay: 5s;
+  --bubble-sway-delay: 5s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(24) {
+  --bubble-left-offset: 49vw;
+  --bubble-radius: 5vw;
+  --bubble-float-duration: 16s;
+  --bubble-sway-duration: 9s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 4s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(25) {
+  --bubble-left-offset: 5vw;
+  --bubble-radius: 9vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 10s;
+  --bubble-float-delay: 1s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(26) {
+  --bubble-left-offset: 45vw;
+  --bubble-radius: 2vw;
+  --bubble-float-duration: 16s;
+  --bubble-sway-duration: 8s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 7s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(27) {
+  --bubble-left-offset: 75vw;
+  --bubble-radius: 1vw;
+  --bubble-float-duration: 15s;
+  --bubble-sway-duration: 9s;
+  --bubble-float-delay: 8s;
+  --bubble-sway-delay: 5s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(28) {
+  --bubble-left-offset: 93vw;
+  --bubble-radius: 4vw;
   --bubble-float-duration: 13s;
   --bubble-sway-duration: 9s;
+  --bubble-float-delay: 7s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(29) {
+  --bubble-left-offset: 29vw;
+  --bubble-radius: 1vw;
+  --bubble-float-duration: 15s;
+  --bubble-sway-duration: 8s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 6s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(30) {
+  --bubble-left-offset: 46vw;
+  --bubble-radius: 10vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 9s;
   --bubble-float-delay: 5s;
-  --bubble-sway-delay: 2s;
+  --bubble-sway-delay: 6s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(31) {
+  --bubble-left-offset: 41vw;
+  --bubble-radius: 4vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 10s;
+  --bubble-float-delay: 8s;
+  --bubble-sway-delay: 1s;
   --bubble-sway-type: sway-right-to-left;
 }
 .bubble:nth-child(32) {
-  --bubble-left-offset: 49vw;
-  --bubble-radius: 9vw;
-  --bubble-float-duration: 10s;
-  --bubble-sway-duration: 8s;
-  --bubble-float-delay: 3s;
-  --bubble-sway-delay: 1s;
-  --bubble-sway-type: sway-left-to-right;
-}
-.bubble:nth-child(33) {
-  --bubble-left-offset: 41vw;
+  --bubble-left-offset: 91vw;
   --bubble-radius: 5vw;
-  --bubble-float-duration: 15s;
-  --bubble-sway-duration: 8s;
-  --bubble-float-delay: 7s;
-  --bubble-sway-delay: 2s;
-  --bubble-sway-type: sway-right-to-left;
-}
-.bubble:nth-child(34) {
-  --bubble-left-offset: 4vw;
-  --bubble-radius: 3vw;
-  --bubble-float-duration: 14s;
+  --bubble-float-duration: 10s;
   --bubble-sway-duration: 9s;
-  --bubble-float-delay: 8s;
-  --bubble-sway-delay: 4s;
-  --bubble-sway-type: sway-right-to-left;
-}
-.bubble:nth-child(35) {
-  --bubble-left-offset: 20vw;
-  --bubble-radius: 2vw;
-  --bubble-float-duration: 10s;
-  --bubble-sway-duration: 8s;
-  --bubble-float-delay: 1s;
-  --bubble-sway-delay: 1s;
-  --bubble-sway-type: sway-right-to-left;
-}
-.bubble:nth-child(36) {
-  --bubble-left-offset: 72vw;
-  --bubble-radius: 8vw;
-  --bubble-float-duration: 16s;
-  --bubble-sway-duration: 8s;
-  --bubble-float-delay: 5s;
-  --bubble-sway-delay: 1s;
-  --bubble-sway-type: sway-right-to-left;
-}
-.bubble:nth-child(37) {
-  --bubble-left-offset: 93vw;
-  --bubble-radius: 5vw;
-  --bubble-float-duration: 10s;
-  --bubble-sway-duration: 8s;
-  --bubble-float-delay: 3s;
+  --bubble-float-delay: 2s;
   --bubble-sway-delay: 8s;
   --bubble-sway-type: sway-left-to-right;
 }
-.bubble:nth-child(38) {
-  --bubble-left-offset: 12vw;
-  --bubble-radius: 5vw;
+.bubble:nth-child(33) {
+  --bubble-left-offset: 91vw;
+  --bubble-radius: 4vw;
+  --bubble-float-duration: 10s;
+  --bubble-sway-duration: 10s;
+  --bubble-float-delay: 5s;
+  --bubble-sway-delay: 6s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(34) {
+  --bubble-left-offset: 38vw;
+  --bubble-radius: 6vw;
   --bubble-float-duration: 15s;
+  --bubble-sway-duration: 8s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 7s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(35) {
+  --bubble-left-offset: 56vw;
+  --bubble-radius: 8vw;
+  --bubble-float-duration: 13s;
   --bubble-sway-duration: 9s;
   --bubble-float-delay: 3s;
   --bubble-sway-delay: 7s;
   --bubble-sway-type: sway-right-to-left;
 }
-.bubble:nth-child(39) {
-  --bubble-left-offset: 7vw;
-  --bubble-radius: 1vw;
-  --bubble-float-duration: 12s;
-  --bubble-sway-duration: 10s;
-  --bubble-float-delay: 8s;
-  --bubble-sway-delay: 7s;
+.bubble:nth-child(36) {
+  --bubble-left-offset: 98vw;
+  --bubble-radius: 4vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 9s;
+  --bubble-float-delay: 6s;
+  --bubble-sway-delay: 8s;
   --bubble-sway-type: sway-left-to-right;
 }
-.bubble:nth-child(40) {
-  --bubble-left-offset: 91vw;
-  --bubble-radius: 1vw;
-  --bubble-float-duration: 16s;
-  --bubble-sway-duration: 10s;
+.bubble:nth-child(37) {
+  --bubble-left-offset: 70vw;
+  --bubble-radius: 3vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 9s;
   --bubble-float-delay: 2s;
-  --bubble-sway-delay: 4s;
+  --bubble-sway-delay: 2s;
   --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(38) {
+  --bubble-left-offset: 32vw;
+  --bubble-radius: 6vw;
+  --bubble-float-duration: 14s;
+  --bubble-sway-duration: 8s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 8s;
+  --bubble-sway-type: sway-left-to-right;
+}
+.bubble:nth-child(39) {
+  --bubble-left-offset: 72vw;
+  --bubble-radius: 9vw;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 8s;
+  --bubble-float-delay: 5s;
+  --bubble-sway-delay: 3s;
+  --bubble-sway-type: sway-right-to-left;
+}
+.bubble:nth-child(40) {
+  --bubble-left-offset: 97vw;
+  --bubble-radius: 3vw;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 8s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 1s;
+  --bubble-sway-type: sway-left-to-right;
 }
 
 @-webkit-keyframes float-up {
@@ -2424,6 +2459,32 @@ select {
   top: 12px;
   left: 8px;
 }
+.select-label .addressBox {
+  width: 100% !important;
+}
+.select-label .addressBox .searchAddress-input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.select-label .addressBox .searchAddress-input::-moz-placeholder {
+  font-size: 13px;
+}
+.select-label .addressBox .searchAddress-input:-ms-input-placeholder {
+  font-size: 13px;
+}
+.select-label .addressBox .searchAddress-input::placeholder {
+  font-size: 13px;
+}
+.select-label .addressBox .searchAddress-input:focus {
+  border-color: #1f024e;
+}
+.select-label .addressBox a {
+  display: inline-block;
+  padding: 10px;
+  font-size: 14px;
+  color: #1b1b1b;
+}
 
 .search-category {
   display: flex;
@@ -3084,11 +3145,6 @@ select {
   border: 0;
 }
 
-.code-box,
-.step-three {
-  display: none;
-}
-
 .login-tab .step-one {
   display: none;
 }
@@ -3371,7 +3427,7 @@ select {
 .form-input2 label {
   font-size: 14px;
 }
-.form-input2 input,
+.form-input2.dropdown button, .form-input2 input,
 .form-input2 select,
 .form-input2 textarea {
   border-radius: 5px;
@@ -3383,6 +3439,26 @@ select {
 .form-input2 textarea {
   height: auto;
   resize: none;
+}
+.form-input2.select-box .select-box-ul {
+  visibility: visible;
+  display: none;
+  max-height: 200px;
+  overflow-y: scroll !important;
+  align-content: flex-start;
+  padding: 0;
+}
+.form-input2.select-box .select-box-ul li {
+  padding: 5px;
+  background-color: #fff;
+}
+.form-input2.select-box .select-box-ul .searchAddress {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.form-input2.select-box .select-box-ul.show {
+  display: grid;
 }
 
 .contact form {
@@ -3842,41 +3918,6 @@ input[type=number] {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.select-box {
-  position: relative;
-}
-.select-box .select-box-ul {
-  position: absolute;
-  width: 150px;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
-  opacity: 0;
-  top: 50%;
-  right: 0;
-  visibility: hidden;
-  overflow: hidden !important;
-  display: grid;
-  background-color: #fff;
-  transition: all 0.3s;
-  border-radius: 5px;
-  padding: 5px;
-}
-.select-box .select-box-ul.show {
-  visibility: visible;
-  opacity: 1;
-  z-index: 5;
-  top: 100%;
-}
-.select-box .select-box-ul.basket-icon-list {
-  width: 300px;
-  overflow-y: scroll;
-  right: auto;
-  left: 0;
-  padding: 10px;
 }
 
 .f-filter {

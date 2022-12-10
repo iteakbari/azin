@@ -245,6 +245,42 @@ footer {
   margin-top: auto;
 }
 
+.select-box {
+  position: relative;
+  .select-box-ul {
+    position: absolute;
+    width: 150px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 8px;
+    opacity: 0;
+    top: 50%;
+    right: 0;
+    visibility: hidden;
+    overflow: hidden !important;
+    display: grid;
+    background-color: #fff;
+    transition: all 0.3s;
+    border-radius: 5px;
+    padding: 5px;
+    &.show {
+      visibility: visible;
+      opacity: 1;
+      z-index: 5;
+      top: 100%;
+    }
+    &.basket-icon-list {
+      width: 300px;
+      overflow-y: scroll;
+      right: auto;
+      left: 0;
+      padding: 10px;
+    }
+  }
+}
+
+
 .text-gradient {
   font-size: 70px;
   font-weight: bolder;
@@ -1606,6 +1642,26 @@ select {
     top: 12px;
     left: 8px;
   }
+  .addressBox{
+    width: 100% !important;
+    .searchAddress-input{
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 14px;
+      &::placeholder{
+        font-size: 13px;
+      }
+      &:focus{
+        border-color: $main-color;
+      }
+    }
+    a{
+      display: inline-block;
+      padding: 10px;
+      font-size: 14px;
+      color: $text-color2;
+    }
+  }
 }
 
 .search-category {
@@ -2222,10 +2278,10 @@ select {
   border: 0;
 }
 
-.code-box,
-.step-three {
-  display: none;
-}
+// .code-box,
+// .step-three {
+//   display: none;
+// }
 .login-tab {
   .step-one {
     display: none;
@@ -2485,7 +2541,7 @@ select {
   label {
     font-size: 14px;
   }
-  input,
+  &.dropdown button,input,
   select,
   textarea {
     border-radius: 5px;
@@ -2497,6 +2553,25 @@ select {
   textarea {
     height: auto;
     resize: none;
+  }
+  &.select-box .select-box-ul{
+    visibility: visible;
+    display: none;
+    max-height: 200px;
+    overflow-y: scroll !important;
+    align-content: flex-start;
+    padding: 0;
+    li{
+      padding: 5px;
+      background-color: #fff;
+    }
+    .searchAddress{
+      position: sticky;
+      top: 0;
+    }
+    &.show{
+      display: grid;
+    }
   }
 }
 
@@ -2953,40 +3028,6 @@ input[type="number"] {
   }
 }
 
-.select-box {
-  position: relative;
-  .select-box-ul {
-    position: absolute;
-    width: 150px;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    box-shadow: rgb(0 0 0 / 10%) 0px 2px 8px;
-    opacity: 0;
-    top: 50%;
-    right: 0;
-    visibility: hidden;
-    overflow: hidden !important;
-    display: grid;
-    background-color: #fff;
-    transition: all 0.3s;
-    border-radius: 5px;
-    padding: 5px;
-    &.show {
-      visibility: visible;
-      opacity: 1;
-      z-index: 5;
-      top: 100%;
-    }
-    &.basket-icon-list {
-      width: 300px;
-      overflow-y: scroll;
-      right: auto;
-      left: 0;
-      padding: 10px;
-    }
-  }
-}
 
 .f-filter {
   position: -webkit-sticky;

@@ -145,19 +145,71 @@
                             <label>شماره تلفن ثابت</label>
                             <input type="tel">
                         </div>
-                        <div class="form-input2 select-label">
+                        <div class="form-input2 select-label dropdown select-box">
                             <label>استان</label>
-                            <select name="" id="">
-                                <option value="">مازندران</option>
-                                <option value="">تهران</option>
-                            </select>
+                            <button class="select-box-btn" type="button" id="dropdownSelect1" data-bs-toggle="dropdown" aria-expanded="false">استان</button>
+                            <ul class="select-box-ul addressBox dropdown-menu">
+                                <li class="searchAddress">
+                                    <input type="search" class="searchAddress-input" placeholder="نام استان">
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="select-item">گیلان</a>
+
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="select-item">کرمانشاه</a>
+
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="select-item">مازندران</a>
+
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="select-item">گیلان</a>
+
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="select-item">کرمانشاه</a>
+
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="select-item">مازندران</a>
+
+                                </li>
+                            </ul>
                         </div>
-                        <div class="form-input2 select-label">
-                            <label>شهر</label>
-                            <select name="" id="">
-                                <option value="">ساری</option>
-                                <option value="">بابل</option>
-                            </select>
+                        <div class="form-input2 select-label dropdown select-box">
+                            <label>استان</label>
+                            <button class="select-box-btn" type="button" id="dropdownSelect1" data-bs-toggle="dropdown" aria-expanded="false">شهر</button>
+                            <ul class="select-box-ul addressBox dropdown-menu">
+                                <li class="searchAddress">
+                                    <input type="search" class="searchAddress-input" placeholder="نام شهر">
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="select-item">ساری</a>
+
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="select-item">بابل</a>
+
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="select-item">آمل</a>
+
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="select-item">فریدونکنار</a>
+
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="select-item">نکا</a>
+
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="select-item">بابلسر</a>
+
+                                </li>
+                            </ul>
                         </div>
                         <div class="form-input2">
                             <label>آدرس</label>
@@ -484,6 +536,31 @@
                 $('header').removeClass('active');
             }
         });
+
+        $(".searchAddress-input").on("keyup", function () {
+            var value = this.value.toLowerCase().trim();
+            $(this).closest('.addressBox').find('li:not(:first-child)').show().filter(function () {
+                return $(this).text().toLowerCase().trim().indexOf(value) == -1;
+            }).hide();
+        });
+
+        $('.form-input2 .select-box-btn').on('click',function(){
+            if ($('.addressBox').hasClass('show')) {
+                $(this).closest('.form-input2').find(".searchAddress-input").focus();
+            }
+        });
+        $('.select-box li:not(:first-child)').on('click', function () {
+            $(this).closest(".select-box").find('.select-box-btn').text($(this).text());
+            $(this).closest(".select-box").find('.dropdown-toggle').dropdown('dispose');
+            $(this).closest(".select-box").find('.searchAddress-input').val('');
+            $(this).closest('.select-box').find('li').show();
+        });
+
+        $('.select-box-btn').on('click',function(){
+            if ($('.select-box-btn').hasClass('show')) {
+                $(this).closest('.select-box').find('.searchAddress-input').focus();
+            }
+        })
 
     </script>
 </body>
