@@ -280,7 +280,6 @@ footer {
   }
 }
 
-
 .text-gradient {
   font-size: 70px;
   font-weight: bolder;
@@ -1642,20 +1641,20 @@ select {
     top: 12px;
     left: 8px;
   }
-  .addressBox{
+  .addressBox {
     width: 100% !important;
-    .searchAddress-input{
+    .searchAddress-input {
       width: 100%;
       box-sizing: border-box;
       font-size: 14px;
-      &::placeholder{
+      &::placeholder {
         font-size: 13px;
       }
-      &:focus{
+      &:focus {
         border-color: $main-color;
       }
     }
-    a{
+    a {
       display: inline-block;
       padding: 10px;
       font-size: 14px;
@@ -2112,7 +2111,7 @@ select {
       padding: 10px;
       font-size: 14px;
     }
-    label{
+    label {
       font-size: 14px;
     }
   }
@@ -2186,6 +2185,8 @@ select {
     box-sizing: border-box;
     border-radius: 0;
     color: $gray;
+    display: flex;
+    align-items: center;
     &.active {
       background-color: #fff;
       color: $main-color;
@@ -2282,11 +2283,11 @@ select {
 // .step-three {
 //   display: none;
 // }
-.login-tab {
-  .step-one {
-    display: none;
-  }
-}
+// .login-tab {
+//   .step-one {
+//     display: none;
+//   }
+// }
 
 .top-banner {
   display: flex;
@@ -2541,7 +2542,8 @@ select {
   label {
     font-size: 14px;
   }
-  &.dropdown button,input,
+  &.dropdown button,
+  input,
   select,
   textarea {
     border-radius: 5px;
@@ -2554,22 +2556,22 @@ select {
     height: auto;
     resize: none;
   }
-  &.select-box .select-box-ul{
+  &.select-box .select-box-ul {
     visibility: visible;
     display: none;
     max-height: 200px;
     overflow-y: scroll !important;
     align-content: flex-start;
     padding: 0;
-    li{
+    li {
       padding: 5px;
       background-color: #fff;
     }
-    .searchAddress{
+    .searchAddress {
       position: sticky;
       top: 0;
     }
-    &.show{
+    &.show {
       display: grid;
     }
   }
@@ -3028,7 +3030,6 @@ input[type="number"] {
   }
 }
 
-
 .f-filter {
   position: -webkit-sticky;
   position: sticky;
@@ -3128,10 +3129,10 @@ input[type="number"] {
   transform: translateX(40%);
   z-index: -1;
   opacity: 0;
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
     width: 60%;
   }
-  @media screen and (max-width:450px) {
+  @media screen and (max-width: 450px) {
     width: 80%;
   }
   > form {
@@ -3145,7 +3146,7 @@ input[type="number"] {
       color: #d6d6d6;
       font-size: 16px;
       transform: translateX(-50px);
-      @media screen and (max-width:991px) {
+      @media screen and (max-width: 991px) {
         color: #fff;
       }
     }
@@ -3155,8 +3156,8 @@ input[type="number"] {
       color: #fff;
       font-size: 13px;
       border: 0;
-      @media screen and (max-width:991px) {
-        &::placeholder{
+      @media screen and (max-width: 991px) {
+        &::placeholder {
           color: #fff;
         }
       }
@@ -3164,7 +3165,7 @@ input[type="number"] {
     a {
       font-size: 20px;
       color: $light-text;
-      @media screen and (max-width:991px) {
+      @media screen and (max-width: 991px) {
         color: #fff;
       }
     }
@@ -3207,26 +3208,25 @@ input[type="number"] {
   }
 }
 
-.answer{
-  background-color: #0957CB;
+.answer {
+  background-color: #0957cb;
   color: #fff;
   padding: 15px;
   border-radius: 5px;
   display: flex;
   gap: 5px;
   flex-direction: column;
-  span{
+  span {
     display: inline-block;
-    align-self:  flex-end;
+    align-self: flex-end;
     background-color: #fff;
-    color: #0957CB;
+    color: #0957cb;
     width: max-content;
     font-size: 12px;
     padding: 0.3rem 0.5rem;
     border-radius: 3px;
   }
 }
-
 
 .rating2 {
   display: flex;
@@ -3246,19 +3246,19 @@ input[type="number"] {
     background-color: #e5e5ea;
     border-radius: 50%;
     cursor: pointer;
-}
-input[type=radio] {
+  }
+  input[type="radio"] {
     display: none;
     &:checked + label {
       background-color: $error;
       color: #ffffff;
       -webkit-animation: blub 0.3s;
       animation: blub 0.3s;
+    }
   }
 }
-}
 
-.show-cart{
+.show-cart {
   max-height: 300px;
   overflow: hidden;
   overflow-y: scroll;
@@ -3268,11 +3268,36 @@ input[type=radio] {
   }
 }
 
-
 .badge {
   color: #fff;
   background-color: $error;
-  @media screen and (max-width:991px) {
+  @media screen and (max-width: 991px) {
     color: #fff;
+  }
+}
+
+.facorite-icon {
+  cursor: pointer;
+  input {
+    display: none;
+    &:checked + i {
+      color: red;
+      &::before {
+        content: "\e9ba";
+      }
+    }
+  }
+  i{
+  font-size: 25px;
+
+  }
+}
+
+
+
+.project-list{
+
+  .swiper{
+    max-width:585px;
   }
 }
